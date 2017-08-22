@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<animals>
+    <animal>
+        <name>Crocodile</name>
+        <type>Reptile</type>
+        <legs>4</legs>
+    </animal>
+    <animal>
+        <name>Dolphin</name>
+        <type>Mamal</type>
+        <legs>0</legs>
+    </animal>
+    <animal>
+        <name>Salmon</name>
+        <type>Fish</type>
+        <legs>0</legs>
+    </animal>
+    <animal>
+        <name>Koala</name>
+        <type>Mammal</type>
+        <legs>2</legs>
+    </animal>
+</animals>

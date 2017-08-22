@@ -19,14 +19,23 @@ class Strategy
     {
         $this->_strategy = $strategy;
     }
-    public function read()
+    public function output()
     {
-        $this->_strategy->read();
+        $this->_strategy->output();
     }
 }
+
+printf("<b>Reading CVS File</b>");
 $filePath =  __DIR__ . '/data.csv';
 $csvIterator = new CsvIterator($filePath);
 $csvIterator->setCsvControl('|');
 $csvIterator->setFlags(SplFileObject::READ_CSV);
 $strategy = new Strategy($csvIterator);
-$strategy->read();
+$strategy->output();
+
+printf("<br/><br/><b>Now Reading and XML file</b>");
+$filePath =  __DIR__ . '/data.xml';
+$xmlIterator = new XmlIterator($filePath);
+$strategy = new Strategy($xmlIterator);
+$strategy->output();
+
