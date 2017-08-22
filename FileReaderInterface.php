@@ -1,5 +1,5 @@
 <?php
 interface FileReaderInterface
 {
-    public function read();
+    public function output();
 }
